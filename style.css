@@ -18,15 +18,20 @@
     padding-bottom: 30vh;
 }
 
-.comeco a{
+.apresentacaoProjeto a{
+    display: grid;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     text-decoration: none;
     color: springgreen;
     border: solid springgreen;
     border-radius: 15%;
+    height: 9vh;
     width: 30vw;
     transition-delay: 70ms;
 }
+
 
 .comeco a:hover{
     background-color: rgb(145, 255, 200);
@@ -35,8 +40,17 @@
 .apresentacao{
     display: grid;
     grid-template-rows: 50vh 50vh;
-    grid-column-gap: 3vw;
+    grid-row-gap: 1vh;
+    align-items: center;
     justify-content: center;
+    padding: 1rem;
+    
+}
+
+.apresentacaoProjeto{
+    display: grid;
+    grid-template-rows: 50vh 50vh 50vh;
+    grid-row-gap: 5vh;
     align-items: center;
     padding: 1rem;
 }
@@ -45,15 +59,16 @@
     text-align: justify;
 }
 
+.apresentacaoProjeto p{
+    text-align: justify;
+}
+
 .apresentacao img {
     border-radius: 100%;
+    border: solid #5f73b4;
     height: 50vh;
 }
-.apresentacao a {
-    margin: 0;
-    width:  40vw;
-    height: 4vh;
-}
+
 
 .contato{
     display: grid;
@@ -65,12 +80,14 @@
 .contato ul{
     display: grid;
     grid-template-columns: 50vw 50vw;
-    
+    padding: 1rem;
 }
 
 .contato ul li{
+    align-items: center;
+    justify-content: center;
     list-style: none;
-    width: 30vw;
+    width: 40vw;
 }
 
 .contato ul li a{
@@ -115,6 +132,13 @@ body{
     height: auto;
     border: solid #9E77F7;
 }
+
+.apresentacaoProjeto img{
+    width: 80vw;
+    height: auto;
+    border: solid #9E77F7;
+}
+
 .headerProjetos{
     padding: 2em;
     display: grid;
@@ -135,4 +159,15 @@ body{
 
 .headerProjetos a:hover{
     background-color: #7E98ED;
+}
+
+@media only screen and (min-width: 1000px) {
+    .apresentacao{
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-column-gap: 1vh;
+        align-items: initial;
+        justify-content: initial;
+        padding: 1rem;
+    }
 }
