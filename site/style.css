@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    border: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.header{
+    padding: 2em;
+}
+
+.corTextoBranco{
+    color: white;
+}
+
+.comeco{
+    height: 100vh;
+    width: 100vw;
+    padding-bottom: 30vh;
+}
+
+.apresentacaoProjeto a{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: springgreen;
+    border: solid springgreen;
+    border-radius: 15%;
+    height: 9vh;
+    width: 30vw;
+    transition-delay: 70ms;
+}
+
+
+.comeco a:hover{
+    background-color: rgb(145, 255, 200);
+}
+
+.apresentacao{
+    display: grid;
+    grid-template-rows: 50vh 50vh;
+    grid-row-gap: 1vh;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    
+}
+
+.apresentacaoProjeto{
+    display: grid;
+    grid-template-rows: 50vh 50vh 50vh;
+    grid-row-gap: 5vh;
+    align-items: center;
+    padding: 1rem;
+}
+
+.apresentacao p{
+    text-align: justify;
+}
+
+.apresentacaoProjeto p{
+    text-align: justify;
+}
+
+.apresentacao img {
+    border-radius: 100%;
+    border: solid #5f73b4;
+    height: 50vh;
+}
+
+
+.contato{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato ul{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    padding: 1rem;
+}
+
+.contato ul li{
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 40vw;
+}
+
+.contato ul li a{
+    border: solid  white;
+    border-radius: 5%;
+    background-color: #1C2B3B;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+}
+.contato ul li a img{
+    height: 5vh;
+}
+body{
+    background-color: #131724;
+}
+.projetos ul li a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.contato ul li a:hover{
+    background-color: #1D1C3B;
+    border: solid  #7E98ED;
+}
+
+.fotosDoProjeto{
+    padding-top: 3rem;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 3rem;
+    background-color: #211833;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotosDoProjeto img{
+    width: 80vw;
+    height: auto;
+    border: solid #9E77F7;
+}
+
+.apresentacaoProjeto img{
+    width: 80vw;
+    height: auto;
+    border: solid #9E77F7;
+}
+
+.headerProjetos{
+    padding: 2em;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: 2rem;
+}
+
+.headerProjetos a{
+    text-align: center;
+    text-decoration: none;
+    color: #6A67D6;
+    border: solid #6A67D6;
+    border-radius: 5%;
+    padding: 1rem;
+    width: 15vw;
+    transition-delay: 10ms;
+}
+
+.headerProjetos a:hover{
+    background-color: #7E98ED;
+}
+
+@media only screen and (min-width: 1000px) {
+    .apresentacao{
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-column-gap: 1vh;
+        align-items: initial;
+        justify-content: initial;
+        padding: 1rem;
+    }
+}
