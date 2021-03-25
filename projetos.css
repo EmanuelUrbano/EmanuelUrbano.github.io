@@ -9,7 +9,6 @@
     color: white;
 }
 
-
 .apresentacao a{
     display: grid;
     justify-content: center;
@@ -97,14 +96,13 @@ body{
 }
 
 .vercoesDoProjeto{
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding: 3vh 3vw 3vh 3vw;
 }
 
 
 .vercoesDoProjeto>ul{
     display: grid;
-    grid-template-rows: repeat(6, 35vh);
+    grid-template-rows:auto auto auto auto auto auto;
     grid-row-gap: 3vh;
     list-style: none;
 }
